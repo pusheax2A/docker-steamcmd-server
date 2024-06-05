@@ -82,7 +82,7 @@ fi
 if [ ! -f ${SERVER_DIR}/WS/Saved/Config/WindowsServer/Engine.ini ]; then
 	echo "---'Engine.ini' not found, downloading template---"
     cd ${SERVER_DIR}/WS/Saved/Config/WindowsServer
-	if wget -q -nc --show-progress --progress=bar:force:noscroll https://github.com/pusheax2A/docker-steamcmd-server/soulmask/config/Engine.ini ; then
+	if wget -q -nc --show-progress --progress=bar:force:noscroll https://raw.githubusercontent.com/pusheax2A/docker-steamcmd-server/soulmask/config/Engine.ini ; then
 		echo "---Sucessfully downloaded 'Engine.ini'---"
 	else
 		echo "---Something went wrong, can't download 'Engine.ini', putting server in sleep mode---"
